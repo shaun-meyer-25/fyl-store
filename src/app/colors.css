@@ -1,0 +1,27 @@
+/*
+ * Color tokens sampled directly from the FYL brand assets
+ * (jake-eisenbeis/fyl_guy.png, Background_cropped.png, mockup_T_*.png).
+ * Update this file if new art changes the palette.
+ */
+:root {
+  /* Background texture (Background_cropped.png) — muted, dusty tones */
+  --fyl-bg-mauve: #836d6e;
+  --fyl-bg-gray: #989a9e;
+  --fyl-bg-plum: #6e696c;
+  --fyl-bg-slate: #687286;
+
+  /* Character (fyl_guy.png) */
+  --fyl-denim: #07569a;
+  --fyl-teal: #096b6c;
+  --fyl-teal-dark: #096a7f;
+  --fyl-skin: #f6cbcf;
+  --fyl-skin-mid: #e9cbd0;
+  --fyl-skin-dark: #eab1b6;
+
+  /* Product card backdrops (mockup_T_*.png) */
+  --fyl-card-blue: #acbdd1;
+  --fyl-card-cream: #fefbec;
+  --fyl-card-white: #fefefd;
+  --fyl-card-charcoal: #343434;
+  --fyl-card-warm-gray: #7c7f81;
+}
