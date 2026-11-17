@@ -56,7 +56,7 @@ export function ProductCard({ product }: { product: Product }) {
           >
             <div className="relative aspect-[419/452] w-full max-w-lg">
               <Image
-                src={product.image}
+                src={withBasePath(product.image)}
                 alt={product.name}
                 fill
                 sizes="90vw"
