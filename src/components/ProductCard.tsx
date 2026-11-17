@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useCart } from "@/lib/cart-context";
+import { withBasePath } from "@/lib/base-path";
 import type { Product } from "@/lib/products";
 
 export function ProductCard({ product }: { product: Product }) {
@@ -11,7 +12,7 @@ export function ProductCard({ product }: { product: Product }) {
     <div className="group flex flex-col gap-1.5">
       <div className="relative aspect-square overflow-hidden rounded-md bg-white shadow-sm">
         <Image
-          src={product.image}
+          src={withBasePath(product.image)}
           alt={product.name}
           fill
           sizes="(max-width: 640px) 25vw, 180px"

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { PRODUCTS } from "@/lib/products";
 import { ProductCard } from "@/components/ProductCard";
 import { useCart } from "@/lib/cart-context";
+import { withBasePath } from "@/lib/base-path";
 
 const CHAR_ASPECT = 4668 / 7013; // fyl-guy.png natural width / height
 const TORSO_CENTER_FRAC = 0.43; // vertical anchor point (collar~0.28 to belt~0.575) to center during shirt-cycle
@@ -154,7 +155,7 @@ export function ScrollStory() {
       >
         {/* eslint-disable-next-line @next/next/no-img-element -- static brand SVG, no optimization needed */}
         <img
-          src="/fyl-store/banner-logo.svg"
+          src={withBasePath("/banner-logo.svg")}
           alt="FYL Custom Clothing"
           className="w-full max-w-3xl"
         />
@@ -167,7 +168,7 @@ export function ScrollStory() {
             className="absolute left-1/2 top-0 will-change-transform"
           >
             <Image
-              src="/fyl-guy.png"
+              src={withBasePath("/fyl-guy.png")}
               alt="FYL guy mascot"
               fill
               priority
@@ -191,7 +192,7 @@ export function ScrollStory() {
               >
                 <div className="relative aspect-square w-full overflow-hidden rounded-lg shadow-xl">
                   <Image
-                    src={product.image}
+                    src={withBasePath(product.image)}
                     alt={product.name}
                     fill
                     sizes="30vw"

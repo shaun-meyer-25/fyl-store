@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   basePath: "/fyl-store",
   assetPrefix: "/fyl-store",
+  env: { NEXT_PUBLIC_BASE_PATH: "/fyl-store" },
   turbopack: {
     rules: {
       "*.css": {
