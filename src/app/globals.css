@@ -21,7 +21,7 @@
 }
 
 body {
-  background: var(--background) url("/background.png") top center repeat-y;
+  background: var(--background) url("/fyl-store/background.png") top center repeat-y;
   background-size: 100% auto;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;

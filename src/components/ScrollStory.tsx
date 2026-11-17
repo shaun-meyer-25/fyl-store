@@ -154,7 +154,7 @@ export function ScrollStory() {
       >
         {/* eslint-disable-next-line @next/next/no-img-element -- static brand SVG, no optimization needed */}
         <img
-          src="/banner-logo.svg"
+          src="/fyl-store/banner-logo.svg"
           alt="FYL Custom Clothing"
           className="w-full max-w-3xl"
         />
